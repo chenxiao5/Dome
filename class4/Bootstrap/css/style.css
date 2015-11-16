@@ -1,0 +1,63 @@
+
+/*全局样式*/
+html,body{
+	height:100%;
+	background:#0683b1;
+}
+.color1{
+	color:#33aedb;
+}
+.norRadius{
+	border-radius: 0;
+}
+
+
+/*登录界面样式*/
+.box{
+	height:455px;
+	position:absolute;
+	top:0; bottom:0; left:0; right:0;
+	margin:auto;
+	transform:scale(.8);-webkit-transform:scale(.8);-moz-transform:scale(.8);-o-transform:scale(.8);
+}
+.heading img{
+	width:280px;height:74px;
+	display:block;
+	margin:auto;
+	margin-bottom: 40px;
+}
+.myform{
+	min-width: 270px;
+	max-width: 600px;
+	margin:auto;
+	background:#fff;
+	padding:66px;
+	border-radius: 4px;
+	box-shadow: 2px 5px 5px -2px #8cba51,
+			2px 1px 1px 0 #0579a9;
+}
+.myform .Account,.myform .Password{
+	position:relative;
+}
+.myform .Account{
+	margin-top:15px;
+	margin-bottom: 20px;
+}
+.myform .Password{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.myform button{
+	margin-top: 30px;
+	height:44px;
+}
+.myform .icons{
+	position:absolute;
+	line-height: 50px;
+	margin-left: 20px;
+}
+.myform input{
+	padding-left:50px;
+	height:50px; 
+	font-size: 16px;
+}

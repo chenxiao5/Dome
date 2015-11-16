@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="mydiv">
+		sdfdsafdsafdafdsafsa
+	</div>
+	<input type="button" name="" value="删除" onclick="deletediv()">
+	<script type="text/javascript">
+	function deletediv(){
+		var div=document.getElementById('mydiv');
+		var text=div.firstChild;
+		var rangeobj=document.createRange();
+		rangeobj.setStart(text, 0);
+		rangeobj.setEnd(text, 3);
+		rangeobj.deleteContents();
+	}
+	</script>
+</body>
+</html>

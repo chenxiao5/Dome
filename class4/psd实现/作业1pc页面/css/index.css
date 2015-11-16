@@ -1,0 +1,1049 @@
+
+/*------------------------------- 简单重置样式 -------------------------------*/
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+
+/*------------------------------- 重置样式END ------------------------*/
+
+
+/*------------------------------- 正文样式 ------------------------*/
+html{
+    font-size: 20px;
+    font-family: "Microsoft YaHei";
+}
+body{
+    min-width: 50rem;
+}
+.Bbox{
+    width:100%;
+}
+.Box{
+    width:50rem;
+    margin:auto;
+}
+.lfloat{
+    float:left;
+}
+.rfloat{
+    float:right;
+}
+.clear{
+    clear:both;
+}
+/****************** 头部样式 ***********************/
+/* 通用first*/
+.Bbox header nav ul li
+{
+    list-style:none; 
+    float:left;
+} 
+.Bbox header nav ul li a
+{
+    text-decoration: none;
+}
+/* 通用end*/
+
+
+.Bbox header
+{
+    width:100%;
+}
+.Bbox header .topBar{
+    width:100%;
+    background-color: #464646;
+}
+.Bbox header .topBar .topBarBox
+{
+    height:1.35rem;
+}
+.Bbox header .topBar .topBarBox nav
+{
+    width:100%;
+    height:100%;
+    border-bottom: 0.05rem solid #464646;
+    background-color: transparent;
+}
+.Bbox header .topBar .topBarBox nav ul
+{
+    height:1.35rem;
+    float:right;
+    margin: 0;
+    padding:0;
+}
+.Bbox header .topBar .topBarBox nav ul li
+{
+    font-size: 0.6rem;
+    height:1.35rem;
+}
+.Bbox header .topBar .topBarBox nav ul li a
+{
+    color:#fff;
+    line-height: 1.35rem;
+    text-align:center;
+}
+.Bbox header .topBar .topBarBox nav ul li span{
+    padding: 0 0.5rem;
+}
+.Bbox header .topBar .topBarBox nav ul li:not(:last-child) span
+{
+    border-right:0.05rem solid #fff;
+}
+.Bbox header .middlehead{
+    width:100%;
+    background-color: #434343;
+}
+.Bbox header .middlehead .middleheadBox{
+    height:6.3rem;
+}
+.Bbox header .middlehead .middleheadBox .logo{
+    width:11rem;
+    height:6.3rem;
+    position:relative;
+}
+.Bbox header .middlehead .middleheadBox .logo a img{
+    width:11rem;height:3.9rem;
+    position:absolute;
+    bottom:1.65rem;
+}
+.Bbox header .middlehead .middleheadBox .search{
+    width:37.5rem;
+    height:6.3rem;
+    position:relative;
+}
+.Bbox header .middlehead .middleheadBox .search .hotPhone{
+    position:absolute;
+    right:0.75rem;top:0.875rem;
+}
+.Bbox header .middlehead .middleheadBox .search .hotPhone span:first-child{
+    font-size: 0.65rem;
+     font-family: "Microsoft YaHei";
+     color:#dfe1e1;
+}
+.Bbox header .middlehead .middleheadBox .search .hotPhone span:last-child{
+    font-size: 1.4rem;
+     font-family: "Impact";
+     color:#54b434;
+}
+.Bbox header .middlehead .middleheadBox .search .searchBottom{
+    position:absolute;
+    right:0.75rem;top:3.2rem;
+}
+.Bbox header .middlehead .middleheadBox .search .searchBottom .hotWord ul{
+    height:1.45rem;
+    padding: 0;
+    margin:0 1.5rem;
+    font-family: "宋体";
+}
+.Bbox header .middlehead .middleheadBox .search .searchBottom .hotWord ul li{
+    height:1.45rem;
+    line-height: 1.45rem;
+    text-align: center;
+    list-style-type: none;
+    float:left;
+   color:#D7D7D7;
+    font-size: 0.6rem;
+}
+.Bbox header .middlehead .middleheadBox .search .searchBottom .hotWord ul li a{
+    text-decoration: none;
+    color:#D7D7D7;
+    font-size: 0.6rem;
+}
+.Bbox header .middlehead .middleheadBox .search .searchBottom .hotWord ul li:not(:first-child){
+    padding:0 0.25rem;
+}
+.Bbox header .middlehead .middleheadBox .search .searchBottom .searchInput input[type=text]{
+    width:8rem;height:1.1rem;
+    border:none;
+    padding:0 0.75rem;
+    border-radius: 0.55rem;
+    font-size: 0.6rem;
+    margin-top: 0.175rem;
+    vertical-align: top;
+}
+.Bbox header .middlehead .middleheadBox .search .searchBottom .searchInput input[type=submit]{
+    width:1.45rem;
+    height:1.45rem;
+    border:none;
+    padding:0;
+    background:url(../images/img.png)  no-repeat;
+    background-position:-72px 0;
+    border-radius: 50%;
+}
+.Bbox header nav{
+    height:2.2rem;
+    background-color: #f2f3fc;
+    margin-bottom: 0.25rem;
+    font-size: 0.7rem;
+}
+.Bbox header nav .navBox .nav ul{
+    height:2.2rem;
+    margin: 0;
+    padding: 0;
+}
+.Bbox header nav .navBox .nav ul li{
+    height:2.2rem;
+    text-align: center;
+}
+.Bbox header nav .navBox .nav ul li a{
+    color:#000;
+    display:table-cell;
+    width:6.2rem; height:2.2rem;
+    vertical-align: middle;
+}
+.Bbox header nav .navBox .nav ul li a span{
+    display:inline-block;
+    height:1rem; width:6.1rem;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #c4c5cd;
+}
+.Bbox header nav .navBox .nav ul li[class*="lis-1"] a span{
+    border:none;
+}
+.Bbox header nav .navBox .nav ul li:nth-child(3) a span{
+    border-right: 1px solid #c4c5cd;
+    border-left: 1px solid #f2f3fc;
+}
+.Bbox header nav .navBox .nav ul li:last-child a span{
+    border-left: 1px solid #fff;
+    border-right: 1px solid #f2f3fc;
+}
+.Bbox header nav .navBox .nav ul li a span{
+    
+}
+.Bbox header nav .navBox .nav ul .ous{
+    color:#fff;
+    position:relative;
+    z-index:2;
+}
+.Bbox header nav .navBox .nav ul .ous a span{
+    color:#fff;
+}
+.Bbox header nav .navBox .nav ul .ous:before{
+    content:" ";
+    display:block;
+    width:5.75rem;
+    height:2.5rem;
+    position:absolute;
+    top: -0.15rem;left:50%;
+    margin-left: -2.875rem;
+    z-index: -1;
+    background:url("../images/img.png") no-repeat;
+    background-position:-113px 0;
+}
+.Bbox header .banner{
+    height:23rem;
+    background:#dbdddd url("../images/bannerbackground.png") no-repeat;
+    background-size: 100% 100%;
+}
+.Bbox header .banner .bannerBox .bannerTop{
+    width:100%;
+    height:21.3rem;
+    position:relative;
+    overflow: hidden;
+}
+.Bbox header .banner .bannerBox .bannerTop>ul:first-child{
+    width:500%; height:100%;
+    margin:0; padding:0;
+    position:absolute;
+    left:-1000px;
+}
+.Bbox header .banner .bannerBox .bannerTop ul:first-child li{
+    width:50rem; height:100%;
+    float: left;
+    list-style-type: none;
+    position:relative;
+}
+.Bbox header .banner .bannerBox .bannerTop ul:first-child li .bannerP{
+    position:absolute;
+    right:1rem;top:7.5rem;
+}
+.Bbox header .banner .bannerBox .bannerTop ul:first-child li img{
+    position:absolute;
+    top:50%;left:20px;
+    margin-top: -154px;
+    width:296px; height:308px;
+}
+.Bbox header .banner .bannerBox .bannerTop ul:first-child li .bannerP p:nth-of-type(1){
+    font-size: 2rem;
+    padding:0; margin:0;
+}
+.Bbox header .banner .bannerBox .bannerTop ul:first-child li .bannerP p:nth-of-type(1):before{
+    content:" ";
+    display:block;
+    width:3.4rem; height:3px;
+    position:absolute;
+    top:-1rem;
+    background: #8ac91a;
+    margin:0 4.25rem 0 3.05rem;
+    box-shadow: -3.05rem 0 0 #ffff1a,
+                        3.4rem 0 0 #00bc9c,
+                        4.25rem 0 0 #00bc9c;
+}
+.Bbox header .banner .bannerBox .bannerTop ul:first-child li .bannerP p:nth-of-type(1) span{
+    text-shadow: 2px 2px 1px rgba(0,0,0,.3);
+    color:#54b434;
+    margin:0 1rem 0 0;
+}
+.Bbox header .banner .bannerBox .bannerTop ul:first-child li .bannerP p:nth-of-type(2){
+    padding:0; margin:1.5rem 0 0 0;
+    font-size: 0.75rem;
+    width:18rem;
+    line-height: 1.5rem;
+    color:rgba(0,0,0,.6);
+}
+.Bbox header .banner .bannerBox .bannerTop ul:last-child{
+    margin:0; padding:0;
+    position:absolute;
+    right:0; bottom:1rem;
+}
+.Bbox header .banner .bannerBox .bannerTop ul:last-child li{
+    width:0.5rem; height:0.5rem;
+    float: left;
+    list-style-type: none;
+    border-radius: 50%;
+    margin:0 0.125rem;
+    cursor: pointer;
+}
+.Bbox header .banner .bannerBox .bannerTop ul:last-child .foucs{
+    background: #54b434;
+}
+.Bbox header .banner .bannerBox .bannerTop ul:last-child .unfoucs{
+    background: #686868;
+}
+.Bbox header .banner .bannerBox .bannerBottom{
+    width:100%;
+    background-color: rgba(128,129,130,.6);
+    line-height: 1.7rem;
+    height:1.7rem;
+}
+.Bbox header .banner .bannerBox .bannerBottom p{
+    margin:0;
+    padding:0;
+    font-size: 0.6rem;
+    font-family: "宋体";
+    color:#fff;
+    position:relative;
+    width:100%;
+}
+.Bbox header .banner .bannerBox .bannerBottom p>a{
+    color:#fff;
+    text-decoration: none;
+}
+.Bbox header .banner .bannerBox .bannerBottom p>a>span{
+    height:1.7rem;
+    line-height: 100%;
+}
+.Bbox header .banner .bannerBox .bannerBottom p>a>span:nth-of-type(1){
+    margin-left: 2.1rem;
+}
+.Bbox header .banner .bannerBox .bannerBottom p>a>span:nth-of-type(2){
+    margin-left: 13rem;
+}
+.Bbox header .banner .bannerBox .bannerBottom p i{
+    width:0.8rem; height:0.8rem;
+    position:absolute;
+    top:50%; left:0.5rem;
+    margin-top: -0.4rem;
+    display:inline-block;
+    background:url(../images/img.png)  no-repeat;
+    background-position:-48px 0;
+}
+
+/****************** 正文样式 ***********************/
+/* 通用start*/
+.Bbox article p,.Bbox article ul{
+    margin:0;
+    padding:0;
+}
+.Bbox article a{
+    text-decoration: none;
+}
+/* 通用end*/
+
+/* 标题start*/
+.Bbox article{
+    width:100%;
+}
+.Bbox article .Product .ProductTitle,.Bbox article .About .AboutTitle{
+    height:5.3rem;
+    bakcground:#FA8B8B;
+    position:relative;
+}
+.Bbox article .Product .ProductTitle .ProductTitleTop,.Bbox article .About .AboutTitle .AboutTitleTop{
+    position:absolute;
+    height:5.3rem; width:100%;
+    line-height: 5.3rem;
+}
+.Bbox article .Product .ProductTitle .ProductTitleTop div,.Bbox article .About .AboutTitle .AboutTitleTop div{
+    font-size: 2.4rem;
+    font-family: Impact;
+    width:16.8rem;
+    position:relative;
+    margin:auto;
+    color:#727272;
+}
+.Bbox article .Product .ProductTitle .ProductTitleTop div span, .Bbox article .About .AboutTitle .AboutTitleTop div span{
+    display:inline-block;
+    font-size: 1.2rem;
+    height:1.9rem; width:7.4rem;
+    line-height: 1.9rem;
+    text-align: center;
+    vertical-align: top;
+    position:absolute;
+    top:50%;right:0;
+    margin-top: -0.9rem;
+    background:#54b434;
+    color:#fff;
+}
+.Bbox article .Product .ProductTitle .ProductTitleBottom, .Bbox article .About .AboutTitle .AboutTitleBottom{
+    position:absolute;
+    bottom:0.25rem;
+    margin: 0 auto;
+    font-size: 0.65rem;
+    color:#cccccc;
+    width:100%;
+    text-align: center;
+}
+.Bbox article .Product .ProductTitle .ProductTitleBottom span,.Bbox article .About .AboutTitle .AboutTitleBottom span{
+    padding:0 0.5rem;
+    background:#fff;
+}
+.Bbox article .Product .ProductTitle .ProductTitleBottom:after,.Bbox article .About .AboutTitle .AboutTitleBottom:after{
+    content:" ";
+    display:block;
+    width:100%;
+    height:1px;
+    background:#cacaca;
+    position:absolute;
+    bottom:0; top:50%;
+    z-index: -2;
+}
+/* 标题end*/
+
+.Bbox article .Product .ProductClassify .ProductClassifyTop{
+
+}
+.Bbox article .Product .ProductClassify .ProductClassifyTop ul{
+    padding:0;
+    margin:1.5rem auto 2rem auto;
+    width:48rem; height:1.5rem;
+}
+.Bbox article .Product .ProductClassify .ProductClassifyTop ul li{
+    float:left;
+    list-style: none;
+    margin:0 0.5rem;
+}
+.Bbox article .Product .ProductClassify .ProductClassifyTop ul .foucs{
+    background:#54b434;
+}
+.Bbox article .Product .ProductClassify .ProductClassifyTop ul .unfoucs{
+    background:#8e8e8e;
+}
+.Bbox article .Product .ProductClassify .ProductClassifyTop ul li a{
+    display:inline-block;
+    width:8.6rem; height:1.5rem;
+    line-height: 1.5rem;
+    font-size: 0.7rem;
+    color:#fff;
+    text-decoration: none;
+    text-align: center;
+}
+.Bbox article .Product .ProductClassify .ProductClassifyBottom{
+    width:100%;height:9.5rem;
+    position:relative;
+}
+.Bbox article .Product .ProductClassify .ProductClassifyBottom div{
+    width:49.3rem; height:9.5rem;
+    margin:auto;
+    position:absolute;
+    left:0;right:0;
+    top:0;bottom:0;
+    display:none;
+}
+.animation1{
+    animation: ProductAnimation 0.5s linear 1 normal;-webkit-animation: ProductAnimation 0.5s linear 1 normal;-moz-animation: ProductAnimation 0.5s linear 1 normal;-o-animation: ProductAnimation 0.5s linear 1 normal;
+}
+@keyframes ProductAnimation{ 0%{opacity: 0.01;} 100%{opacity: 1;}}
+@-webkit-keyframes ProductAnimation{ 0%{opacity: 0.01;} 100%{opacity: 1;}}
+@-moz-keyframes ProductAnimation{ 0%{opacity: 0.01;} 100%{opacity: 1;}}
+@-o-keyframes ProductAnimation{ 0%{opacity: 0.01;} 100%{opacity: 1;}}
+.Bbox article .Product .ProductClassify .ProductClassifyBottom div:after{
+    content:" ";
+    display:block;
+    clear:both;
+}
+.Bbox article .Product .ProductClassify .ProductClassifyBottom a{
+    float:left;
+    margin:0 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    width:11.2rem; height:9.2rem;
+    box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-o-box-sizing: border-box;
+}
+.Bbox article .Product .ProductClassify .ProductClassifyBottom a:hover p{
+    color:#54b434;
+}
+.Bbox article .Product .ProductClassify .ProductClassifyBottom img{
+    width:11rem; height:7.5rem;
+    border:2px solid #fff;
+    box-shadow: 0 0 1px #ddd;
+}
+.Bbox article .Product .ProductClassify .ProductClassifyBottom div a:first-child{
+    margin-left: 0;
+}
+.Bbox article .Product .ProductClassify .ProductClassifyBottom div a:last-child{
+    margin-right: 0;
+}
+.Bbox article .Product .ProductClassify .ProductClassifyBottom div a p{
+    font-size: 0.6rem;
+    font-family: "宋体";
+    color:#575757;
+    padding-top: 0.5rem;
+}
+.Bbox article .Poster{
+    background:#404040 url("../images/Poster.png") center no-repeat;
+}
+.Bbox article .Poster .PosterBox{
+    height:7.25rem;
+    margin:2rem auto 3rem auto;
+    position:relative;
+}
+.Bbox article .Poster .PosterBox:after{
+    content:" ";
+    display:block;
+    width:0;
+    border-top: 2rem solid #404040;
+    border-left:3.5rem solid #fff;
+    border-right:3.5rem solid #fff;
+    position: absolute; 
+    bottom:-2rem; left:50%;
+    margin-left: -3.5rem;
+    z-index: -2;
+}
+.Bbox article .Poster .PosterBox .PosterTop{
+    width:7.9rem; height:4.1rem;
+    position:absolute;
+    top:0; bottom:0;
+    left:0; right:0;
+    margin:auto;
+}
+.Bbox article .Poster .PosterBox .PosterTop p:first-child{
+    font-size: 1.2rem;
+    color:#fff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.Bbox article .Poster .PosterBox .PosterTop p:last-child{
+    width:7.9rem; height:1.5rem;
+    font-size: 0.7rem;
+    color:#fff;
+    background:#54b434;
+    text-align: center;
+    line-height: 1.5rem;
+}
+.Bbox article .Poster .PosterBox i{
+    display:block;
+    width:1.2rem; height:1.2rem;
+    border:1px solid #fff;
+    border-radius: 50%;
+    position:absolute;
+    bottom: -0.65rem; left:50%;
+    margin-left: -0.6rem;
+    cursor: pointer;
+    transform:rotate(0deg); -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -o-transform:rotate(0deg);
+    transition: transform 0.5s linear;-webkit-transition: -webkit-transform 0.5s linear;-moz-transition: -moz-transform 0.5s linear;-o-transition: -o-transform 0.5s linear;
+}
+.Bbox article .Poster .PosterBox i:hover{
+    transform:rotate(180deg); -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -o-transform:rotate(180deg);
+}
+.Bbox article .Poster .PosterBox i:before{
+    content:"";
+    display:block;
+    position:absolute;
+    top:0; bottom:0;
+    left:0; right:0;
+    margin:auto;
+    width:0.5rem; height:1px;
+    background-color: #fff;
+}
+.Bbox article .Poster .PosterBox i:after{
+    content:"";
+    display:block;
+    position:absolute;
+    top:0; bottom:0;
+    left:0; right:0;
+    margin:auto;
+    width:1px; height:0.5rem;
+    background-color: #fff;
+}
+.Bbox article .About .AboutContent{
+    margin-top:1.5rem;
+    background:url(../images/About.png) right no-repeat;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+    background-origin:content-box;
+    position:relative;
+}
+.Bbox article .About .AboutContent:before{
+    content:"";
+    display:block;
+    width:100%; 
+    border-top: 1px dotted #c5c5c5;
+    position:absolute;
+    bottom:0;
+}
+.Bbox article .About .AboutContent:after{
+    content:"";
+    display:block;
+    width:100%; 
+    border-top: 1px dotted #c5c5c5;
+    position:absolute;
+    bottom:2px;
+}
+.Bbox article .About .AboutContent .AboutClassify{
+    margin-bottom: 0.7rem;
+}
+.Bbox article .About .AboutContent .AboutClassify ul{
+    height:2.45rem; width:28rem;
+    border-bottom:1px solid #ddd;
+}
+.Bbox article .About .AboutContent .AboutClassify ul li{
+    width:5rem; height:2.4rem;
+    text-align: center;
+    line-height: 2.4rem;
+    float:left;
+    list-style: none;
+    font-size: 0.65rem;
+    border-radius: 5px 5px 0 0;
+    margin-right:0.5rem;
+    cursor:pointer;
+}
+.Bbox article .About .AboutContent .AboutClassify ul li:hover{
+    color:#54b434;
+}
+.Bbox article .About .AboutContent .AboutClassify ul .foucs{
+    border:1px solid #ddd;
+    border-bottom-color:#fff;
+}
+.Bbox article .About .AboutContent .AboutClassify ul .unfoucs{
+    border:1px solid #fff;
+    border-bottom-color:#ddd;
+}
+.Bbox article .About .AboutContent .AboutClassify ul li i{
+    display:inline-block;
+    margin-right:0.5rem;
+    width:0.6rem; height:0.6rem;
+}
+.Bbox article .About .AboutContent .AboutClassify ul li:nth-child(1) i{
+    background: url("../images/img.png") no-repeat;
+    background-position:0 0;
+}
+.Bbox article .About .AboutContent .AboutClassify ul li:nth-child(2) i{
+    background: url("../images/img.png") no-repeat;
+    background-position:-16px 0;
+}
+.Bbox article .About .AboutContent .AboutClassify ul li:nth-child(3) i{
+    background: url("../images/img.png") no-repeat;
+    background-position:-32px 0;
+}
+.Bbox article .About .AboutContent .AboutText{
+    width:26.5rem;
+}
+.Bbox article .About .AboutContent .AboutText div{
+    min-height:10.5rem;
+    display:none;
+}
+.Bbox article .About .AboutContent .AboutText div:nth-child(1){
+    display:block;
+}
+.Bbox article .About .AboutContent .AboutText div p:first-child{
+    font-size: 0.9rem;
+    color:#333;
+    font-weight: bold;
+    margin:1.2rem 0;
+}
+.Bbox article .About .AboutContent .AboutText div p:nth-child(2){
+    font-size: 0.75rem;
+    color:#656565;
+    line-height: 1.5rem;
+    padding-left: 0.2rem;
+}
+.Bbox article .About .AboutContent .AboutText div p:last-child{
+    width:4.1rem; height:1.2rem;
+    font-size: 0.6rem;
+    color:#fff;
+    background:#7e7e7e;
+    text-align: center;
+    line-height: 1.2rem;
+    cursor: pointer;
+    margin:0.6rem 0;
+}
+.Bbox article .About .AboutContent .AboutText div p:last-child:hover{
+    background:#54b434;
+}
+.Bbox article .About .AboutContent .AboutText div p:last-child:hover i{
+    transform:rotate(180deg); -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -o-transform:rotate(180deg);
+}
+.Bbox article .About .AboutContent .AboutText div p:last-child i{
+    display:inline-block;
+    width:0.5rem; height:0.5rem;
+    margin-left:4px;
+    position:relative;
+    transform:rotate(0deg); -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -o-transform:rotate(0deg);
+    transition: transform 0.5s linear;-webkit-transition: -webkit-transform 0.5s linear;-moz-transition: -moz-transform 0.5s linear;-o-transition: -o-transform 0.5s linear;
+}
+.Bbox article .About .AboutContent .AboutText div p:last-child i:before{
+    content:"";
+    display:block;
+    width:0.4rem; height:1px;
+    background:#fff;
+    position:absolute;
+    left:0;right:0;top:0;bottom:0;
+    margin:auto;
+}
+.Bbox article .About .AboutContent .AboutText div p:last-child i:after{
+    content:"";
+    display:block;
+    width:1px; height:0.4rem;
+    background:#fff;
+    position:absolute;
+    left:0;right:0;top:0;bottom:0;
+    margin:auto;
+}
+.Bbox article .About .AboutClient .ClientTitle{
+    border-bottom:1px solid #ddd;
+    margin-top: 1.3rem;
+    padding-bottom: 0.5rem;
+}
+.Bbox article .About .AboutClient .ClientTitle div{
+    font-size: 0.9rem;
+    color:#333;
+}
+.Bbox article .About .AboutClient .ClientTitle div>span{
+    font-size: 0.6rem;
+    color:#c7c7c7;
+    padding-left: 0.5rem;
+    font-weight: normal;
+}
+.Bbox article .About .AboutClient .ClientTitle div>p{
+    float:right;
+    margin-right: 0.5rem;
+}
+.Bbox article .About .AboutClient .ClientTitle div>p>a{
+    font-size: 0.6rem;
+    color:#ababab;
+    line-height: 1.2rem;
+}
+.Bbox article .About .AboutClient .ClientTitle div>p>a:hover{
+    color:#54b434;
+}
+.Bbox article .About .AboutClient .ClientContent{
+    height:3.6rem;
+    margin:1.5rem 0 1.9rem 0;
+}
+.Bbox article .About .AboutClient .ClientContent a{
+    float:left;
+    text-align: center;
+    display:inline-block;
+    width:7.5rem; height:3.6rem;
+    box-sizing: border-box;
+    margin:0 0.5rem;
+}
+.Bbox article .About .AboutClient .ClientContent a:first-child{
+    margin-left: 0;
+}
+.Bbox article .About .AboutClient .ClientContent a:last-child{
+    margin-right: 0;
+}
+.Bbox article .About .AboutClient .ClientContent a img{
+    width:7.4rem; height:3.5rem;
+    border:1px solid #ddd;
+}
+.Bbox article .About .AboutClient .OurOffice{
+    padding:0.2rem;
+    border:1px solid #e0e1dc;
+}
+.Bbox article .About .AboutClient .OurOffice .OurOfficeTitle>p>span{
+    font-size: 0.75rem;
+    color:#333;
+    margin-left:0.5rem;
+}
+.Bbox article .About .AboutClient .OurOffice .OurOfficeTitle>p{
+    background:#f3f3f3;
+    height:1.5rem;
+    line-height: 1.5rem;
+    border-bottom: 3px solid #54b434;
+}
+.Bbox article .About .AboutClient .OurOffice .OurOfficeTitle a{
+    font-size: 0.6rem;
+    color:#ababab;
+    float:right;
+    margin-right: 0.5rem;
+}
+.Bbox article .About .AboutClient .OurOffice .OurOfficeContent{
+    padding:0 0.75rem;
+}
+.Bbox article .About .AboutClient .OurOffice .OurOfficeContent a{
+    font-size: 0.7rem;
+    color:#666;
+    margin:0 0.75rem;
+}
+.Bbox article .About .AboutClient .OurOffice .OurOfficeTitle a:hover,.Bbox article .About .AboutClient .OurOffice .OurOfficeContent a:hover{
+    color:#54b434;
+}
+
+
+/****************** 脚注样式 ***********************/
+/* 通用start*/
+.Bbox footer p,.Bbox footer ul{
+    margin:0;
+    padding:0;
+}
+.Bbox footer a{
+    text-decoration: none;
+}
+/* 通用end*/
+
+.Bbox footer{
+    background:#333;
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    font-size: 0.6rem;
+    font-family: "宋体";
+    color:#fff;
+}
+.Bbox footer .footerBox .footerTop{
+    padding-bottom: 2.2rem;
+    position:relative;
+}
+.Bbox footer .footerBox .footerTop:after{
+    content:"";
+    display:block;
+    width:100%; height:2.2rem;
+    position:absolute;
+    bottom:0;
+    background:url("../images/footer.png") center no-repeat;
+    opacity: 0.8;
+}
+.Bbox footer .footerBox .footerTop p{
+    height:2.4rem;
+    line-height: 2.4rem;
+    border-top: 1px solid #474747;
+    border-bottom: 1px solid #474747;
+    padding:0 0.7rem;
+}
+.Bbox footer .footerBox .footerTop ul{
+    width:45.5rem;height:1.5rem;
+    margin:auto;
+}
+.Bbox footer .footerBox .footerTop ul li{
+    width:5rem;
+    text-align: center;
+    list-style: none;
+    float:left;
+    padding:1.5rem 0;
+}
+.Bbox footer .footerBox .footerTop ul li>span{
+    display:inline-block;
+    width:100%;
+    border-right: 1px solid #fff;
+}
+.Bbox footer .footerBox .footerTop ul li:last-child>span{
+    border:none;
+}
+.Bbox footer .footerBox .footerTop ul li>span>a{
+    color: #fff;
+}
+.Bbox footer .footerBox .footerTop ul li>span>a:hover{
+    color:#54b434;
+}
+.Bbox footer .footerBox .footerBottom{
+    border-top: 1px solid #474747;
+    border-bottom: 1px solid #474747;
+    padding:1rem 0;
+}
+.Bbox footer .footerBox .footerBottom p{
+
+}
+.Bbox footer .footerBox .footerBottom>p>span{
+    float:right;
+}

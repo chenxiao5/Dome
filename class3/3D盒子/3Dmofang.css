@@ -1,0 +1,114 @@
+*{
+	margin:0;
+	padding:0;
+}
+.Bbox{
+	width:210px;
+	margin:210px auto;
+
+}
+.Bbox .box {
+	width:210px;
+	height:210px;
+	position: relative;
+
+}
+.Bbox .box .entirety{
+	height:210px;
+	width:210px;
+	transform-style: preserve-3d; -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d;  -o-transform-style: preserve-3d;
+	transform:rotateX(-45deg) rotateY(45deg) rotate(90deg); -webkit-transform:rotateX(-45deg) rotateY(45deg) rotate(90deg); -moz-transform:rotateX(-45deg) rotateY(45deg) rotate(90deg); -o-transform:rotateX(-45deg) rotateY(45deg) rotate(90deg);
+	animation:animations2 3s steps(1,end) infinite; -webkit-animation:animations2 3s steps(1,end) infinite; -moz-animation:animations2 3s steps(1,end) infinite; -o-animation:animations2 3s steps(1,end) infinite;
+}
+@keyframes animations2{
+	35%{ transform:rotateX(-45deg) rotateY(45deg) rotate(90deg);}
+	65%{ transform:rotateX(-45deg) rotateY(45deg) rotate(0deg);}
+}
+@-webkit-keyframes animations2{
+	35%{ -webkit-transform:rotateX(-45deg) rotateY(45deg) rotate(90deg);}
+	65%{ -webkit-transform:rotateX(-45deg) rotateY(45deg) rotate(0deg);}
+}
+@-moz-keyframes animations2{
+	35%{ -moz-transform:rotateX(-45deg) rotateY(45deg) rotate(90deg);}
+	65%{ -moz-transform:rotateX(-45deg) rotateY(45deg) rotate(0deg);}
+}
+@-o-keyframes animations2{
+	35%{ -o-transform:rotateX(-45deg) rotateY(45deg) rotate(90deg);}
+	65%{ -o-transform:rotateX(-45deg) rotateY(45deg) rotate(0deg);}
+}
+.Bbox .box .entirety .part{
+	width:70px;
+	height:210px;
+	transform-style: preserve-3d; -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d;  -o-transform-style: preserve-3d;
+	position:absolute;
+}
+.Bbox .box .entirety .part:nth-child(1){
+	left:0;
+	z-index: 3;
+}
+.Bbox .box .entirety .part:nth-child(2){
+	left:70px;
+	z-index: 2;
+	animation: animations 3s linear infinite ; -webkit-animation: animations 3s linear infinite ; -moz-animation: animations 3s linear infinite ; -o-animation: animations 3s linear infinite ;
+}
+.Bbox .box .entirety .part:nth-child(2) .face{
+	filter: invert(100%); -webkit-filter: invert(100%); -moz-filter: invert(100%); -o-filter: invert(100%);
+}
+.Bbox .box .entirety .part:nth-child(3){
+	left:140px;
+	z-index: 1;
+}
+@keyframes animations{
+	15%,85%{ transform: rotateX(0deg);}
+	35%,65%{ transform: rotateX(90deg);}
+}
+@-webkit-keyframes animations{
+	15%,85%{ -webkit-transform: rotateX(0deg);}
+	35%,65%{ -webkit-transform: rotateX(90deg);}
+}
+@-moz-keyframes animations{
+	15%,85%{ -moz-transform: rotateX(0deg);}
+	35%,65%{ -moz-transform: rotateX(90deg);}
+}
+@-o-keyframes animations{
+	15%,85%{ -o-transform: rotateX(0deg);}
+	35%,65%{ -o-transform: rotateX(90deg);}
+}
+.Bbox .box .entirety .part .face{
+	width:70px;
+	height:210px;
+	position:absolute;
+	background: linear-gradient(#d9d9e4 33.333%, #26261a 33.333%, #26261a 66.667%, #d9d9e4 66.667%);
+}
+.Bbox .box .entirety .part .face:nth-child(1){
+	width:210px;
+	right:100%;
+	transform-origin: right; -webkit-transform-origin: right; -moz-transform-origin: right; -o-transform-origin: right;
+	transform:translateZ(105px) rotateY(-90deg); -webkit-transform:translateZ(105px) rotateY(-90deg); -moz-transform:translateZ(105px) rotateY(-90deg); -o-transform:translateZ(105px) rotateY(-90deg);
+	background: linear-gradient(#26261a 33.333%, #d9d9e4 33.333%, #d9d9e4 66.667%, #26261a 66.667%) 50% 50% no-repeat, linear-gradient(#d9d9e4 33.333%, #26261a 33.333%, #26261a 66.667%, #d9d9e4 66.667%);
+    	background-size: 33.333% 100%, 100% 100%;
+}
+.Bbox .box .entirety .part .face:nth-child(2){
+	width:210px;
+	left:70px;
+	transform-origin: left; -webkit-transform-origin: left; -moz-transform-origin: left; -o-transform-origin: left;
+	transform:translateZ(105px) rotateY(90deg); -webkit-transform:translateZ(105px) rotateY(90deg); -moz-transform:translateZ(105px) rotateY(90deg); -o-transform:translateZ(105px) rotateY(90deg);
+	background: linear-gradient(#26261a 33.333%, #d9d9e4 33.333%, #d9d9e4 66.667%, #26261a 66.667%) 50% 50% no-repeat, linear-gradient(#d9d9e4 33.333%, #26261a 33.333%, #26261a 66.667%, #d9d9e4 66.667%);
+    	background-size: 33.333% 100%, 100% 100%;
+}
+.Bbox .box .entirety .part .face:nth-child(3){
+	bottom:100%;
+	transform-origin: bottom; -webkit-transform-origin: bottom; -moz-transform-origin: bottom; -o-transform-origin: bottom;
+	transform:translateZ(105px) rotateX(90deg); -webkit-transform:translateZ(105px) rotateX(90deg); -moz-transform:translateZ(105px) rotateX(90deg); -o-transform:translateZ(105px) rotateX(90deg);
+}
+.Bbox .box .entirety .part .face:nth-child(4){
+	top:100%;
+	transform-origin: top; -webkit-transform-origin: top; -moz-transform-origin: top; -o-transform-origin: top;
+	transform:translateZ(105px) rotateX(-90deg); -webkit-transform:translateZ(105px) rotateX(-90deg); -moz-transform:translateZ(105px) rotateX(-90deg); -o-transform:translateZ(105px) rotateX(-90deg);
+}
+.Bbox .box .entirety .part .face:nth-child(5){
+	transform:translateZ(105px); -webkit-transform:translateZ(105px); -moz-transform:translateZ(105px); -o-transform:translateZ(105px);
+}
+.Bbox .box .entirety .part .face:nth-child(6){
+	transform:translateZ(-105px); -webkit-transform:translateZ(-105px); -moz-transform:translateZ(-105px); -o-transform:translateZ(-105px);
+}

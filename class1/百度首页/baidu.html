@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, maximum=scale=1, initial-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>baidu</title>
+	<link rel="stylesheet" type="text/css" href="./css/baidu.css">	
+</head>
+<body>
+	<!--PC端百度首页-->
+	<div class="box">
+		<!--顶部导航模块-->
+		<!-- <div style="height:20px"></div>防止外边距重合 -->
+		<div class="header">
+			<div class="nav">
+				<ul>
+					<li><a href="#" title="新闻">新闻</a></li>
+					<li><a href="#" title="hao123">hao123</a></li>
+					<li><a href="#" title="地图">地图</a></li>
+					<li><a href="#" title="贴吧">贴吧</a></li>
+					<li><a href="#" title="视频">视频</a></li>
+					<li class="item"><a href="#" title="登录">登录</a></li>
+					<li class="itemSet"><a href="#" title="设置">设置</a>
+						<div class="moreSet">
+							<i class="i1"></i>
+							<i class="i2"></i>
+							<ul>
+								<li><a href="#" alt="搜索设置">搜索设置</a></li>
+								<li><a href="#" alt="高级搜索">高级搜索</a></li>
+								<li><a href="#" alt="关闭预测">关闭预测</a></li>
+								<li><a href="#" alt="搜索历史">搜索历史</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="more">
+						<a href="#" title="更多产品">更多产品</a>
+						<div class="morediv">
+							<div class="Products">
+								<div class="ProductsItems1">更多产品</div>
+								<div class="ProductsItems2">
+									<a href="#" alt="糯米"><span class="ProductsItemsSpan1"></span>糯米</a>
+									<a href="#" alt="知道"><span class="ProductsItemsSpan2"></span>知道</a>
+									<a href="#" alt="音乐"><span class="ProductsItemsSpan3"></span>音乐</a>
+									<a href="#" alt="图片"><span class="ProductsItemsSpan4"></span>图片</a>
+									<a href="#" alt="文库"><span class="ProductsItemsSpan5"></span>文库</a>
+									<a href="#" alt="风云榜"><span class="ProductsItemsSpan6"></span>风云榜</a>
+									<a href="#" alt="百度推广"><span class="ProductsItemsSpan7"></span>百度推广</a>
+									<div class="AllProducts">
+										<a href="#" alt="全部产品">全部产品</a>								
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!--功能模块-->
+		<div class="article">
+			<div class="ContentBox">
+				<div class="logo"><img src="./images/bdlogo.png" width="270px" height="130px" alt="百度LOGO"></div>
+				<div class="input">
+					<form id="baiduForm" action="baidu" method="get" accept-charset="utf-8">
+						<span class="textSpan"><input id="text" name="keyName" type="text" autofocus value=""></span>
+						<span class="buttonSpan"><input id="btn" type="submit" name="" value="百度一下"></span>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--底部模块-->
+		<div class="footer">
+			<div class="footerContent">
+				<p class="top">
+					<a href="#">把百度设为主页</a>
+					<a href="#">关于百度</a>
+					<a href="#">About&nbsp;&nbsp;Baidu</a>
+				</p>
+				<p class="bottom">
+					©2015&nbsp;Baidu&nbsp;
+					<a href="#">使用百度前必读</a>
+					<a href="#">意见反馈</a>
+					&nbsp;京ICP证030173号&nbsp;
+					<i class="icon"></i>
+				</p>
+			</div>
+		</div>
+	</div>
+	<!--移动端百度首页-->
+	<div class="mbox">
+		<header>
+			<div class="userinfo">
+				<a href="#"></a>
+			</div>
+			<div class="logo">
+				<a href="#"><img src="./images/white_logo.png" width=175 height=55 alt="LOGO"></a>
+			</div>
+			<form action="baidu_submit" method="get" accept-charset="utf-8">
+				<div class="input-box">
+					<textarea autocomplete="off" autocorrect="off" maxlength="64" name="word"></textarea>
+					<div class="right">
+						<div class="callicon-wrap">
+							<div class="baiduapp-icon"></div>
+							<div class="baiduappcall-wrap">
+								<div class="qrcode"></div>
+								<div class="voice"></div>
+							</div>
+						</div>
+						<div class="submit-btn">
+							<button type="submit">百度一下</button>
+						</div>
+					</div>
+				</div>
+			</form>
+			<nav>
+				<a href="#"><i></i>新闻</a>
+				<a href="#"><i></i>小说</a>
+				<a href="#"><i></i>视频</a>
+				<a href="#"><i></i>生活+</a>
+				<a href="#"><i></i>地图</a>
+				<a href="#"><i></i>更多</a>
+				<a class="more" href="#"><i></i>贴吧</a>
+				<a class="more" href="#"><i></i>图片</a>
+				<a class="more" href="#"><i></i>网址</a>
+				<a class="more" href="#"><i></i>推广</a>
+			</nav>
+		</header>
+		<section class="banner">
+			<div><i class="close"></i></div>
+		</section>
+		<section class="plus-card">
+			<div class="nav plus">
+				<div class="plus-title">
+					<div class="normal-title">
+						<i></i>
+						<h2>常用网址</h2>
+						<a href="javascript:void(0)">
+							<i></i>
+							<ul>
+								<li>编辑</li>
+								<li>置顶</li>
+								<li class="close">关闭</li>
+							</ul>
+						</a>
+					</div>
+				</div>
+				<div class="plus-content">
+					<a href="#"><span>贴吧</span></a>
+					<a href="#"><span>hao123</span></a>
+					<a href="#"><span>地图</span></a>
+					<a href="#"><span>百度VIP</span></a>
+					<a href="#"><span>图片</span></a>
+					<a href="#"><span>音乐</span></a>
+					<a href="#"><span>导航</span></a>
+					<a class="add" href="javascript:;"></a>
+				</div>
+			</div>
+			<div class="hotword plus">
+				<div class="plus-title">
+					<div class="normal-title">
+						<i></i>
+						<h2>实时热点</h2>
+						<span><i></i>换一批</span>
+						<a href="javascript:void(0)">
+							<i></i>
+							<ul>
+								<li>置顶</li>
+								<li class="close">关闭</li>
+							</ul>
+						</a>
+					</div>
+				</div>
+				<ul class="plus-content">
+					<li><a href="#">十大最堵景点</a></li>
+					<li><a href="#">长沙西红柿大战</a></li>
+					<li><a href="#">47岁张敏现身</a></li>
+					<li><a href="#">众人抬轿护送游客</a></li>
+					<li><a href="#">梁静茹与玛莎同台</a></li>
+					<li><a href="#">东莞街头广告吓人</a></li>
+				</ul>
+			</div>
+			<div class="lbs plus">
+				<div class="plus-title">
+					<div class="normal-title">
+						<i></i>
+						<h2>生活服务</h2>
+						<a href="javascript:void(0)">
+							<i></i>
+							<ul>
+								<li>置顶</li>
+								<li class="close">关闭</li>
+							</ul>
+						</a>
+					</div>
+				</div>
+				<div class="gps-zone">
+					<div class="gps-info">
+						<p>点击定位，查看附近位置信息</p>
+					</div>
+					<button>定位</button>
+					<i></i>
+				</div>
+				<ul class="plus-content">
+					<li><a href="#"><i></i><p>电影</p></a></li>
+					<li><a href="#"><i></i><p>团购</p></a></li>
+					<li><a href="#"><i></i><p>外卖</p></a></li>
+					<li><a href="#"><i></i><p>打车</p></a></li>
+					<li><a href="#"><i></i><p>酒店</p></a></li>
+					<li><a href="#"><i></i><p>美食</p></a></li>
+					<li><a href="#"><i></i><p>KTV</p></a></li>
+					<li><a href="#"><i></i><p>银行</p></a></li>
+					<li class="moretab"><a href="#"><i></i><p>飞机票</p></a></li>
+					<li class="moretab"><a href="#"><i></i><p>汽车票</p></a></li>
+					<li class="moretab"><a href="#"><i></i><p>火车票</p></a></li>
+					<li class="moretab"><a href="#"><i></i><p>公交站</p></a></li>
+					<li class="moretab"><a href="#"><i></i><p>旅行</p></a></li>
+					<li class="moretab"><a href="#"><i></i><p>就诊</p></a></li>
+				</ul>
+				<div class="plus-control">
+					<div class="open"><span>展示全部</span><i></i></div>
+					<div class="close"><span>收起</span><i></i></div>
+				</div>
+			</div>
+			<div class="admin plus"><i></i>管理我的应用</div>
+		</section>
+		<footer>
+			<ul class="footer-top">
+				<li><a href="#">百度浏览器，上网提速200%</a></li>
+				<li><a href="#">手机百度，最省流量的极速搜索APP</a></li>
+				<li><a href="#">百度推广，让有需求的客户找到你</a></li>
+			</ul>
+			<div class="footer-bottom">
+				<div><a href="#">急速版</a><a href="#">用户反馈</a></div>
+				<a href="#">使用百度前必读 Baidu 京ICP证030173号</a>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

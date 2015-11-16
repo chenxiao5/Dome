@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.box{
+			width:500px;
+			height:500px;
+			border:1px solid #444;
+			margin:50px auto;
+			position:relative;
+		}
+		.ball{
+			width:150px;
+			height:150px;
+			border-radius:50%;
+			position:absolute;
+			top:10px;left:50%;
+			margin-left:-75px;
+			background: -webkit-linear-gradient( top, #fff, #999);
+			box-shadow:inset 0 0 30px #999 , inset 0 -15px 70px #999;
+			-webkit-animation: jump 2s ease-in infinite alternate;
+		}
+		.ball::after{
+			content: " ";
+			display:block;
+			width:70px;
+			height:30px;
+			border-radius:50%;
+			position:absolute;
+			top:10px;left:50%;
+			margin-left:-35px;
+			background: -webkit-linear-gradient(#fff,#ccc);
+		}
+		.shadow{
+			width:200px;
+			height:60px;
+			border-radius:50%;
+			position:absolute;
+			bottom:0px;left:50%;
+			margin-left:-100px;
+			background-color:rgba(20, 20, 20, .1);
+			box-shadow:0 0 25px 20px rgba(20, 20, 20, .1);
+			transform: scaleY(.5);
+			-webkit-animation: shrink 2s ease-in infinite alternate;
+		}
+		@-webkit-keyframes jump{
+			0%{transform:scaleY(1); top:10px;}
+			90%{transform:scaleY(1); top:320px;}
+			100%{transform:scaleY(0.5); top:360px;}
+		}
+		@-webkit-keyframes shrink{
+			0%{transform: scale(1,.5); }
+			90%{transform: scale(.7,.3); }
+			100%{transform: scale(.7,.3); }
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="ball"></div>
+		<div class="shadow"></div>
+	</div>
+</body>
+</html>

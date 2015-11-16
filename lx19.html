@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>监听键盘事件</title>
+	<style type="text/css">
+		.box{width:100%; background:#eee;}
+		.box>h1{ margin:0;}
+		.box>p{ color:#CFC64D; border-bottom: 1px solid #333;}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<h1>留言板</h1>
+		<hr/>
+		<p>你好</p>
+	</div>
+	<form action="lx19_submit" name="myform" method="get" accept-charset="utf-8">
+		<textarea name="texts"></textarea>
+		<input type="button" name="btn" value="点击">
+	</form>
+	<script type="text/javascript">
+		window.onload=function(){
+			var boxdiv=getbyclass("box");
+			var h1=boxdiv.firstChild;
+			var texts=document.myform.texts;
+			var btn=document.myform.btn;
+			btn.onclick=texts.onkeydown=function(e){
+				var ev=e||window.event;
+				if(ev.type=="click"||(ev.type=="keydown"&&ev.keyCode==13&&ev.ctrlKey==true))
+				{
+					var newp=document.createElement("p");
+					newp.innerHTML=texts.value;
+					boxdiv.appendChild(newp);
+					texts.value="";
+				}
+			}
+		}
+		function getbyclass(eclass){
+			var all=document.getElementsByTagName("*");
+			var assembly=new Array();
+			var a=0;
+			while(a<all.length){
+				if (all[a].className==eclass) 
+					assembly.push(all[a]);
+				a++;
+			}
+			return assembly[0];
+		}
+	</script>
+</body>
+</html>

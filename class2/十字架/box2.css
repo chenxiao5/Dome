@@ -1,0 +1,45 @@
+html,body{
+	height:100%;
+	margin:0;
+	padding:0;
+}
+.box{
+	width:100px;
+	height:100px;
+	margin: 5px auto;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #888888;
+}
+.clear{
+	clear:both;
+}
+.BigBox{
+	width:330px;
+	height:330px;
+	border:1px solid transparent;/* 防止外边距合并*/
+	position:absolute;
+	top: 50%; left:50%;
+	margin:-165px 0 0 -165px;
+}
+/* 中间三个盒子*/
+.center{
+	float:left;
+	margin:5px;
+} 
+/* 盒子内容*/
+.topBox{
+	background-color: #559BA4;
+}
+.leftBox{
+	background-color: #8A4C8F;
+}
+.centerBox{
+	background: #D2D0D0 url("russel_dog_128px_1165307_easyicon.net.png") no-repeat center;
+	background-size:80px 80px;
+}
+.rightBox{
+	background-color: #47895B;
+}
+.bottomBox{
+	background-color: #6F493D;
+}

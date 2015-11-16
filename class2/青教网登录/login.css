@@ -1,0 +1,120 @@
+body{
+	margin:0;
+	padding:0;
+	background-color: #1B6F8B;
+	background: url("beijing.gif");
+}
+a{
+	text-decoration:none;
+}
+.externalTable{
+	margin:15px auto;
+}
+
+
+/*四个角*/
+.jiao{
+	width:29px;
+	height:28px;
+	vertical-align:top;
+}
+.topleft{
+	background: url("jiaos1.gif") no-repeat;
+}
+.topright{
+	background: url("jiaos2.gif") no-repeat;
+}
+.bottomleft{
+	background: url("di1.gif") no-repeat;
+}
+.bottomright{
+	background: url("di2.gif") no-repeat;
+}
+
+/*头部*/
+.header .logotd{
+	width:220px;
+	height:72px;
+}
+.header .nav a{
+	font-size: 12px;
+	color:#FF0099;
+	margin:5px;
+}
+.header .nav a:hover{
+	color:#9F246E;
+}
+
+/*内容*/
+.red{
+	color:#FF0000;
+}
+.title{
+	padding-left:10px;
+	background-color:#EEEEEE;
+	font-weight: bold;
+	color:#003399;
+}
+.contend table .lable{
+	text-align: right;
+	vertical-align: middle;
+}
+.contend table .input{
+	width:520px;
+	line-height: 20px;
+	color:#0000ff;
+}
+.contend .table1{
+	width:650px;
+	font-size: 12px;
+	background-color:#FFFFFF;
+	color:#333333;
+	border-collapse: collapse;
+	border:none;
+}
+.contend .table1 table{
+	font-size: 12px;
+	background-color:#FFFFFF;
+	color:#333333;
+	border-collapse: collapse;
+	border:none;
+}
+.contend table td{
+	border:1px solid #CCCCCC;
+	line-height: 24px;
+}
+.contend table caption{
+	color:#000000;
+	font-size:18px;
+	font-weight:bold;
+	margin:12px auto;
+}
+.contend table thead th{
+	line-height: 18px;
+	font-weight: 400;
+	padding:5px 0;
+	border:1px solid #CCCCCC;
+}
+.contend table thead a{
+	text-decoration: underline;
+}
+.contend table .sub{
+	height:90px;
+	text-align: center;
+	vertical-align: middle;
+}
+.contend table .sub input{
+	width:100px;
+}
+
+/*底部*/
+.contend table .footer{
+	text-align: center;
+	border:0;
+}
+.contend table .footer p{
+	margin:0;
+	padding:0;
+	display:inline;
+	color:#666666;
+}

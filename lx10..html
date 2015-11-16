@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.box{
+			width:100px;
+			height:100px;
+			margin:50px auto;
+			background-color:#f00;
+		}
+		.box:hover{
+			border-radius:50%;
+			background-color:#000;
+			-webkit-animation:animations 2s linear infinite alternate;
+			-moz-animation:animations 2s linear infinite alternate;
+			-o-animation:animations 2s linear infinite alternate;
+			-ms-animation:animations 2s linear infinite alternate;
+			animation:animations 2s linear infinite alternate;
+		}
+		@-webkit-keyframes animations{ 
+			25%{width:125px; height:125px;}
+			50%{width:150px; height:150px;}
+			75%{width:175px; height:175px;}
+			100%{width:200px; height:200px;}
+		}
+		@-moz-keyframes animations{
+			25%{width:125px; height:125px;}
+			50%{width:150px; height:150px;}
+			75%{width:175px; height:175px;}
+			100%{width:200px; height:200px;}
+		}
+		@-o-keyframes animations{ 
+			25%{width:125px; height:125px;}
+			50%{width:150px; height:150px;}
+			75%{width:175px; height:175px;}
+			100%{width:200px; height:200px;}
+		}
+		@-ms-keyframes animations{ 
+			25%{width:125px; height:125px;}
+			50%{width:150px; height:150px;}
+			75%{width:175px; height:175px;}
+			100%{width:200px; height:200px;}
+		}
+		@keyframes animations{ 
+			25%{width:125px; height:125px;}
+			50%{width:150px; height:150px;}
+			75%{width:175px; height:175px;}
+			100%{width:200px; height:200px;}
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>

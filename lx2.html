@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#box1,#box2{
+			width:300px;
+			height:300px;
+			border:1px solid #B93A3A;
+		}
+		#box1 li,#box2 li
+		{
+			list-style:none;
+			width:200px;
+			height:40px;
+			line-height:40px;
+			text-align:center;
+			background-color:#FD0303;
+			margin:10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="box1">
+		
+	</div>
+	<div id="box2">
+		<ul>
+			<li>111</li>
+			<li>222</li>
+			<li>333</li>
+			<li>444</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		window.onload=function(){
+			var box1=document.getElementById('box1');
+			var box2=document.getElementById('box2');
+			var lis=document.getElementsByTagName('li');
+			for (var i = 0; i < lis.length; i++) {
+				lis[i].draggable=true;
+				lis[i].flag=false;
+				lis[i].ondragstart=function(){
+					this.flag=true;
+				}
+				lis[i].ondragend=function(){
+					this.flag=false;					
+				}
+			}
+			box1.ondragenter=function(e){
+				e.preventDefault();
+			}
+			box1.ondragover=function(e){
+				e.preventDefault();
+			}
+			box1.ondragleave=function(e){
+				e.preventDefault();
+			}
+			box1.ondrop=function(e){
+				for (var i = 0; i < lis.length; i++) {
+					if (lis[i].flag) {
+						box1.appendChild(lis[i]);
+					}
+				}
+				e.preventDefault();
+			}
+
+			box2.ondragenter=function(e){
+				e.preventDefault();
+			}
+			box2.ondragover=function(e){
+				e.preventDefault();
+			}
+			box2.ondragleave=function(e){
+				e.preventDefault();
+			}
+			box2.ondrop=function(e){
+				for (var i = 0; i < lis.length; i++) {
+					if (lis[i].flag) {
+						box2.appendChild(lis[i]);
+					}
+				}
+				e.preventDefault();
+			}
+	}
+	</script>
+</body>
+</html>

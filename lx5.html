@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function deletecon(num){
+			var showdiv=document.getElementById('showdiv');
+			var rangeobj=document.createRange();
+			if (num) {
+				rangeobj.selectNodeContents(showdiv);
+				rangeobj.deleteContents();
+			}else{
+				rangeobj.selectNode(showdiv);
+				rangeobj.deleteContents();
+			}
+		}
+	</script>
+	<div id="showdiv" style="border:1px solid #27A756; width:400px; height:400px;">fdsafdsafsadf</div>
+	<button value="删除内容" onclick="deletecon(true)" >1</button>
+	<button value="删除节点" onclick="deletecon(false)" >2</button>
+</body>
+</html>

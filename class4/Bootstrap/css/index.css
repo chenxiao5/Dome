@@ -1,0 +1,176 @@
+body{
+	padding-top: 60px;
+}
+.bgcolor1{
+	background-color: #fff;
+}
+.nomargin{
+	margin:0;
+}
+.nav-custom{
+	background:#0683b1;
+	border:none;
+}
+.nav-custom .navbar-header img{
+	width:140px; height:40px;
+	margin:10px auto;
+}
+.navbar-nav > li > a{
+	text-align: center;
+	font-size: 16px;
+	color:#fff;
+	padding:20px 15px;
+}
+.nav-custom ul:first-child> li:first-child > a{
+	padding-left: 20px;
+}
+.nav-custom ul:last-child li:last-child > a{
+	margin-right: 20px;
+}
+@media (max-width: 990px) {
+	.nav-custom .navbar-header img{
+		margin-right: 70px;
+	}
+	.navbar-nav > li > a{
+		font-size: 14px;
+		color:#fff;
+		padding:20px 6px;
+	}
+	.navbar-nav >ul:first-child li:last-child > a{
+		padding-right: 0;
+	}
+}
+.navbar-nav > li > a:hover,.navbar-nav > li > a:focus{
+	color:#fff;
+	background:transparent;
+	position:relative;
+}
+.navbar ul:first-child > li > a:hover:after,.navbar ul:first-child > li > a:focus:after{
+	content:"";
+	display:block;
+	width:0;
+	border-bottom: 10px solid #fff;
+	border-left: 10px solid #0683b1;
+	border-right:10px solid #0683b1;
+	position:absolute;
+	bottom:0;left:50%;
+	margin-left: -10px;
+}
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 61px;
+    bottom: 0; left: 0;
+    padding:0;
+    z-index: 1000;
+    display: block;
+    overflow-y: auto; 
+    background-color: #f4f8f9;
+    border-right: 2px solid #e8ebec;
+  }
+}
+.sidebar ul li:first-child{
+	height:50px;
+	line-height: 50px;
+	font-size: 18px;
+	padding-left: 15px;
+	margin-bottom: 20px;
+	color:#8cba51;
+	background:#fff;
+	border-bottom: 1px solid #e8ebec;
+}
+.sidebar ul li:first-child span:first-child{
+	float:left;
+	font-size: 30px;
+	line-height: 48px;
+	color:#8cba51;
+}
+.sidebar ul li:first-child span:last-child{
+	display: block;
+	float:left;
+	margin-left: 15px;
+}
+.sidebar ul li:not(:first-child) span{
+	font-size:14px;
+	color:#595a5a;
+	margin-left: 15px;
+}
+.sidebar ul li:not(:first-child) a:hover,.sidebar ul li:not(:first-child) a:focus{
+	background:#fff;
+}
+.sidebar ul li:not(:first-child):hover,.sidebar ul li:not(:first-child):focus{
+	background:#fff;
+	padding-left:10px;
+}
+.sidebar ul li:not(:first-child) a:hover>span,.sidebar ul li:not(:first-child) a:focus>span{
+	color:#34acd8;
+}
+.sidebar ul li span:first-child{
+	color:#cbd4d6;
+}
+.sidebar ul .onfoucs{
+	padding-left:10px;
+	background:#fff; 
+}
+.sidebar ul .onfoucs a,.sidebar ul .onfoucs a{
+	background:#fff;
+}
+.sidebar ul .onfoucs a>span,.sidebar ul .onfoucs a>span{
+	color:#34acd8;
+}
+.sidebar ul li a{
+	color:#000;
+}
+.main {
+  padding: 0 20px;
+}
+@media (min-width: 768px) {
+}
+.main h2{
+	display:block;
+	height:50px;
+	font-size: 18px;
+	line-height: 50px;
+	margin:0;
+	border-bottom: 1px solid #e5e8ea;
+	margin-bottom: 20px;
+}
+.main h2>span{
+	display:inline-block;
+	height:100%;
+	position:relative;
+}
+.main h2 span:after{
+	display:block;
+	content:"";
+	width:100%;height:3px;
+	background:#8cba51;
+	position:absolute;
+	bottom:0;
+}
+.main table{
+	font-size: 14px;
+}
+.main table thead{
+	border-top: 2px solid #34acd8;
+}
+.main table td{
+	border-top: none;
+	border-bottom: 1px solid #ddd;
+}
+.main table  th:nth-child(4),.main table  th:nth-child(9){
+	text-align: center;
+}
+.main table  tr td:nth-child(4),.main table  tr td:nth-child(8){
+	text-align: center;
+}
+.main table  tr td:nth-child(9){
+	text-align: center;
+	padding:3px 8px;
+}
+.main nav>ul>li>a{
+	margin:0 4px;
+}
